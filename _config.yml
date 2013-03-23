@@ -14,9 +14,9 @@ prose:
       "_posts/blog": |
         title:    "Title of your article"
         abstract: "Abstract"
-#      "_posts/projects": |
-#        name: "Project Name"
-#        img:  "Project Thumbnail"
+      "_posts/projects": |
+        name: "Project Name"
+        img:  "Project Thumbnail"
 
 # Themes are encouraged to use these universal variables 
 # so be sure to set them if your theme uses them.
