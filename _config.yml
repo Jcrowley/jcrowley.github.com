@@ -5,6 +5,18 @@ permalink: /:categories/:year/:month/:day/:title
 exclude: [".rvmrc", ".rbenv-version", "README.md", "Rakefile", "changelog.md"]
 auto: true
 pygments: true
+server: true
+permalink: none
+baseurl: "jcrowley"
+prose:
+  rooturl: "_posts"
+  metadata:
+      "_posts/blog": |
+        title:    "Title of your article"
+        abstract: "Abstract"
+#      "_posts/projects": |
+#        name: "Project Name"
+#        img:  "Project Thumbnail"
 
 # Themes are encouraged to use these universal variables 
 # so be sure to set them if your theme uses them.
@@ -55,7 +67,7 @@ JB :
   #   - Only the following values are falsy: ["", null, false]
   #   - When setting BASE_PATH it must be a valid url.
   #     This means always setting the protocol (http|https) or prefixing with "/"
-  BASE_PATH : false
+  BASE_PATH : /
 
   # By default, the asset_path is automatically defined relative to BASE_PATH plus the enabled theme.
   # ex: [BASE_PATH]/assets/themes/[THEME-NAME]
@@ -65,7 +77,7 @@ JB :
   #   http://s3.amazonaws.com/yoursite/themes/watermelon
   #   /assets
   #
-  ASSET_PATH : false
+  ASSET_PATH : /assets/themes/twitter
 
   # These paths are to the main pages Jekyll-Bootstrap ships with.
   # Some JB helpers refer to these paths; change theme here if needed.
@@ -81,16 +93,7 @@ JB :
   comments :
     provider : disqus
     disqus :
-      short_name : jekyllbootstrap
-    livefyre :
-      site_id : 123
-    intensedebate :
-      account : 123abc
-    facebook :
-      appid : 123
-      num_posts: 5
-      width: 580
-      colorscheme: light
+      short_name : camproberts
    
   # Settings for analytics helper
   # Set 'provider' to the analytics provider you want to use.
@@ -99,7 +102,7 @@ JB :
   analytics :
     provider : google 
     google : 
-        tracking_id : 'UA-123-12'
+        tracking_id : 'UA-35781837-1'
     getclicky :
       site_id : 
     mixpanel :
@@ -124,3 +127,34 @@ JB :
   #   ./_includes/custom/[HELPER]
   # where [HELPER] is the name of the helper you are overriding.
   
+  pages_list :
+      provider: "custom"
+  
+  # CUSTOM SETTINGS for jcrowley.github.com
+  #
+  # 1. NAVBAR
+  
+  navbar:
+  - text: Home
+    url: index.html
+  - text: About
+    url: about/index.html
+  - text: Blog
+    url: blog/index.html
+  - text: Work
+    url: work/index.html
+    
+  # Associated Liquid markup
+  #  <ul class="nav-list">
+  #    {% for link in site.navigation %}
+  #      {% assign current = nil %}
+  #      {% if page.url == link.url %}
+  #        {% assign current = 'current' %}
+  #      {% endif %}
+
+  #      <li class="nav-list-item{% if forloop.first %}first{% endif %} {{ current }} {% if forloop.last %}nav-list-item-last{% endif %}">
+  #        <a class="{{ current }}" href="{{ link.url }}">{{ link.text }}</a>
+  #      </li>
+  #    {% endfor %}
+  #   </ul>
+  #
