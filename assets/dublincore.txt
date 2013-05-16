@@ -1,0 +1,51 @@
+title:
+creator:
+subject:
+description:
+publisher:
+contributor:
+date:
+type:
+format:
+identifier:
+source:
+language:
+relation:
+coverage:
+rights:
+
+<META CONTENT='YOUR-SITE-TITLE' NAME='DC.Title'/>
+<META CONTENT='NAME-OF-SITE-CREATOR' NAME='DC.Creator'/>
+<META CONTENT='KEYWORDS' NAME='DC.Subject' scheme='MESH'/>
+<META CONTENT='SITE-DESRIPTION' NAME='DC.Description'/>
+<META CONTENT='NAME-OF-PUBLISHER' NAME='DC.Publisher'/>
+<META CONTENT='1999-05-12' NAME='DC.Date'/>
+<META CONTENT='2010-05-12' NAME='DC.Date.Modified'/>
+<META CONTENT='text' NAME='DC.Type' scheme='DCMIType'/>
+<META CONTENT='text/html' NAME='DC.Format' scheme='IMT'/>
+<META CONTENT='SITE-URL' NAME='DC.Identifier'/>
+<META CONTENT='en; English' NAME='DC.Language' scheme='RFC1766'/>
+<META CONTENT='' NAME='DC.rights'>
+
+<link rel="schema.DC" href="http://purl.org/dc/elements/1.1/" />
+<meta name="DC.Title" content="Disaster Relief 2.0" />
+<meta name="DC.Creator" content="John Crowley" />
+<meta name="DC.Subject" content="disaster response, volunteer technical communities, Haiti" />
+<meta name="DC.Description" content="The report, Disaster Relief 2.0: The Future of Information Sharing in Humanitarian Emergencies, analyzes how the humanitarian community and the emerging volunteer and technical communities worked together in the aftermath of the 2010 earthquake in Haiti, and recommends ways to improve coordination between them in future emergencies." />
+<meta name="DC.Publisher" content="UN Foundation" />
+<meta name="DC.Contributor" content="OCHA" />
+<meta name="DC.Date" content="2011-03-29" />
+<meta name="DC.Type" content="text" />
+<meta name="DC.Format" content="text/html" />
+<link rel="DC.Identifier" href="http://4m33.com/blog/dr20" />
+<meta name="DC.Language" content="en" />
+<meta name="DC.Coverage" content="Haiti" />
+<meta name="DC.Rights" content="Copyright, 2011 UN Foundation" />
+
+Liquid tags
+
+page.url: current page's url
+
+
+
+

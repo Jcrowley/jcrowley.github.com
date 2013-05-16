@@ -1,0 +1,57 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+<title>Untitled Document</title>
+
+
+
+</head>
+
+<body>
+<p class="hatchshow_container" style="float:left;margin-right:5%;width:30%">
+<span class="hsjs">This is a test</span>
+<span class="hsjs">of the emergency broadcast system</span>
+<span class="hsjs">This is only a</span>
+<span class="hsjs">test</span>
+</p>
+
+
+<script type="text/javascript" src="http://ajax.googleapis.com/ajax/libs/jquery/1/jquery.min.js"></script>
+
+<script type="text/javascript" charset="utf-8">
+
+$(window).load(function(){
+
+$().hatchShow();
+
+});	
+
+jQuery.fn.hatchShow = function(){
+
+$('.hsjs').css('display','inner-block').css('white-space','pre').each(function(){
+
+var t = $(this);
+
+t.wrap("<span class='hatchshow_temp' style='display:block'>");
+
+var pw = t.parent().width();
+
+while( t.width() < pw ){t.css('font-size', (t.fontSize()+1)+"px"),
+
+function(){while( t.width() > pw ){t.css('font-size', (t.fontSize()-.1)+"px")}};
+
+};
+
+}).css('visibility','visible');
+
+};
+
+jQuery.fn.fontSize = function(){return parseInt($(this).css('font-size').replace('px',''));};
+
+ 
+
+</script>
+
+</body>
+</html>

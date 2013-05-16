@@ -1,0 +1,61 @@
+<!-- (*) -->
+
+<!-- .blog-posts -->
+<div class="blog-posts readable-content">
+
+{% for post in posts %}
+
+	<!-- filter (published: true, homepage: true, post_type: short || blog) -->
+    {% assign published = post.published %}
+    {% assign homepage = post.homepage %}
+    {% assign post_type = post.post_type %}
+	{% assign approved_post_types = ['short', 'blog'] %}
+
+	{% if 	published == true and 
+			homepage == true and 
+			(post_type == 'short' or post_type == 'blog')  %}
+
+	<!-- excerpt -->
+
+	<!-- .post -->										
+    <article class="post type-post hentry">
+
+		<!-- .entry-header -->
+        <header class="entry-header">
+            <h1 class="entry-title">
+                <a href="{{post.url}}" title="{{ post.title }}" rel="bookmark">{{ post.title }}</a>
+            </h1>
+        </header>
+        <!-- .entry-header -->
+         
+         <!-- .entry-meta --> 
+        <footer class="entry-meta">
+            posted on <a href="#" title="" rel="bookmark"><time class="entry-date" datetime="{{ post.date | date_to_xmlschema }}">{{ post.date | date_to_string }}</time></a>
+            </span>				
+        </footer>
+        <!-- .entry-meta -->  
+                  
+		<!-- .featured -->
+        <div class="featured">
+            <img src="" alt="blog-image">
+        </div>
+        <!-- .featured -->
+        
+        <!-- .entry-content -->
+        <div class="entry-content">
+            <p>{{ post.excerpt }}
+            <a href="{{post.url}}" class="more-link">Continue reading <span class="meta-nav">→</span></a></p>
+        </div>
+        <!-- .entry-content -->
+        
+    </article>
+    <!-- .post -->
+
+	{% endif %}
+	
+{% endfor %}
+
+</div>
+<!-- end .blog-posts -->
+<!-- (*) -->
+

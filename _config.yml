@@ -7,7 +7,7 @@ auto: true
 pygments: true
 server: true
 permalink: none
-baseurl: "jcrowley"
+## baseurl: "jcrowley"
 prose:
   rooturl: "_posts"
   metadata:
@@ -67,7 +67,7 @@ JB :
   #   - Only the following values are falsy: ["", null, false]
   #   - When setting BASE_PATH it must be a valid url.
   #     This means always setting the protocol (http|https) or prefixing with "/"
-  BASE_PATH : /
+  BASE_PATH : false
 
   # By default, the asset_path is automatically defined relative to BASE_PATH plus the enabled theme.
   # ex: [BASE_PATH]/assets/themes/[THEME-NAME]
@@ -77,12 +77,12 @@ JB :
   #   http://s3.amazonaws.com/yoursite/themes/watermelon
   #   /assets
   #
-  ASSET_PATH : /assets/themes/twitter
+  ASSET_PATH : /assets/themes/read
 
   # These paths are to the main pages Jekyll-Bootstrap ships with.
   # Some JB helpers refer to these paths; change theme here if needed.
   #
-  archive_path: /archive.html
+  archive_path: blog/index.html
   categories_path : /categories.html
   tags_path : /tags.html
 

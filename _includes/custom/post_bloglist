@@ -1,0 +1,30 @@
+<!-- (*) -->
+<!-- post_shortlist with paginator -->
+
+{% for post in paginator.posts %}
+
+	<!-- filter (published: true, homepage: true, post_type: short || blog) -->
+
+	{% if 	post.published == true and 
+			post.post_type == 'blog' %}
+
+	<!-- excerpt -->
+	<a href="{{post.url}}">{{ post.title }}</a>
+	
+	<time datetime="{{ post.date | date_to_xmlschema }}" class="postdate">{{ post.date | date_to_string }}</time>
+	
+	<p>{{ post.excerpt }}</p>
+	
+	<!-- tags -->
+	{% include custom/tags_list %}
+	
+	<!-- read more -->
+	<a href="{{post.url}}" class="textlink right">Read More</a>
+
+	{% endif %}
+	
+{% endfor %}
+
+<!-- end home_bloglist with paginator -->
+<!-- (*) -->
+

@@ -1,0 +1,97 @@
+index.html
+archive.html
+pages.html
+categories.html
+tags.html
+404.html
+
+Each category in documents will generate a subfolder off base_url to contain the posts (by date) within that category. It is possible to use an array for categories, which will generate sub-subfolder off in the order of the array: category: [ category1, subcategory1 ] => /category1/subscategory1/2012/12/31/filename.html.
+
+about/
+_posts/
+
+Categories that generate subdirs
+1. work: Work
+2. blog: Blog
+	- disaster-response
+	- humanitarian-action
+	- systems-thinking
+	- arts-and-sciences
+	- organizational-design
+	- policy-and-law
+
+
+NavBar
+Need a method to determine the active element in the navbar
+There will be five elements
+
+Home
+About
+Work (portfolio)
+Blog (everything in one stream, breakdown to work and personal optional)
+Contact
+
+Define in _config.yml
+
+navbar:
+- 	text: Home
+	url: /home/
+	id: home
+- 	text: About
+	url: /about/
+	id: about
+-	text: Work
+	url: /work/
+	id: work
+- 	text: Blog
+	url: /blog/
+	id: blog
+- 	text: Contact
+	url: /contact/
+	id: contact
+	
+Each page would have a group attribute that would be required
+
+Logic in NavBar would be this:
+Would need to default to something or find second way to determine page status if left out...
+
+in each page
+
+define
+navbar_id: about
+
+Then in Liquid
+
+assign current_bar = page.navbar_id
+if page.navbar_id == false, infer the right navbar
+	include a helper file that will output the right info
+	send a note to the page: hey, assign a navbar_id to me
+else use the logic below
+
+on gen of each element of navbar
+
+if navbar.id = page.navbar_id, then include current code
+else: just have navbar element inactive
+
+Could 
+
+
+
+
+
+
+
+
+	
+
+
+pagegroup
+
+
+
+
+
+
+
+
+

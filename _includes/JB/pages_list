@@ -21,6 +21,7 @@ Usage:
 -->{% endcomment %}
 
 {% if site.JB.pages_list.provider == "custom" %}
+  {% assign navgroup = page.navgroup%}
   {% include custom/pages_list %}
 {% else %}
   {% for node in pages_list %}

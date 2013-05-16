@@ -1,0 +1,147 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1" >
+    <meta name="description" content="John Crowley | Humanitarian, Technologist, Researcher, Writer">
+    <meta name="keywords" content="humanitarian, technology, Camp Roberts, RELIEF, Harvard Humanitarian Initiative, National Defense University">
+    <meta name="author" content="John Crowley">
+    
+    <!-- TemplateBeginEditable name="doctitle" -->
+    <title>John Crowley | Humanitarian, Technologist, Researcher, Writer</title>
+    <!-- TemplateEndEditable -->
+    
+    <!-- FAV and TOUCH ICONS -->
+    <link rel="shortcut icon" href="{{ ASSET_PATH }}/images/ico/favicon.ico">
+    <link rel="apple-touch-icon-precomposed" sizes="144x144" href="{{ ASSET_PATH }}/images/ico/logo-144.png">
+    <link rel="apple-touch-icon-precomposed" sizes="114x114" href="{{ ASSET_PATH }}/images/ico/logo-114.png">
+    <link rel="apple-touch-icon-precomposed" sizes="72x72" href="{{ ASSET_PATH }}/images/ico/logo-72.png">
+    <link rel="apple-touch-icon-precomposed" href="{{ ASSET_PATH }}/images/ico/logo-57.png">
+    
+    <!-- FONTS -->
+    
+    <link href='http://fonts.googleapis.com/css?family=Lora:400,700,400italic,700italic' rel='stylesheet' type='text/css'>
+    <link href='http://fonts.googleapis.com/css?family=UnifrakturMaguntia' rel='stylesheet' type='text/css'>
+    <link href='http://fonts.googleapis.com/css?family=Coustard' rel='stylesheet' type='text/css'>
+    <link href='http://fonts.googleapis.com/css?family=IM+Fell+English+SC|Sorts+Mill+Goudy:400,400italic' rel='stylesheet' type='text/css'>
+    
+    <!--[if lte IE 9]>
+        <script src="{{ ASSET_PATH }}js/html5shiv.js"></script>
+        <script src="{{ ASSET_PATH }}js/selectivizr-min.js"></script>
+    <![endif]-->
+    
+    <!-- STYLES -->
+    <link rel="stylesheet" type="text/css" media="print" href="{{ ASSET_PATH }}/css/print.css">
+    <link rel="stylesheet" type="text/css" href="{{ ASSET_PATH }}/css/grid.css">
+    <link rel="stylesheet" type="text/css" href="{{ ASSET_PATH }}/css/style.css">
+    <link rel="stylesheet" type="text/css" href="{{ ASSET_PATH }}/css/normalize.css">
+    <link rel="stylesheet" type="text/css" href="{{ ASSET_PATH }}/css/font-awesome.css">
+    <link rel="stylesheet" type="text/css" href="{{ ASSET_PATH }}/js/google-code-prettify/prettify.css">
+    <link rel="stylesheet" type="text/css" href="{{ ASSET_PATH }}/css/uniform.default.css">
+    <link rel="stylesheet" type="text/css" href="{{ ASSET_PATH }}/css/main.css">
+    <link rel="stylesheet" type="text/css" href="{{ ASSET_PATH }}/css/flexslider.css">
+    
+    <!-- SCRIPTS -->
+    <!-- Grab Google CDN's jQuery, with a protocol relative URL; fall back to local if offline -->
+    <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.8.2/jquery.min.js"></script>
+    <script>window.jQuery || document.write('<script src="{{ ASSET_PATH }}js/jquery-1.8.2.min.js"><\/script>')</script>
+    
+    <!-- TemplateBeginEditable name="head" -->
+    <!-- TemplateEndEditable -->
+
+</head>
+
+
+<body>
+
+    <!-- #PAGE -->
+    <div id="page" class="hfeed site"> 
+      
+      <!-- .site-header -->
+      <header class="site-header wrapper" role="banner"> 
+	
+        <!-- .row -->
+        <div class="row"> 
+	
+	      <!-- #site-navigation -->
+          <nav id="site-navigation" class="main-navigation" role="navigation">
+            <ul>
+                    {% assign pages_list = site.pages %}
+		            {% assign group = 'navigation' %}
+		            {% include JB/pages_list %}
+            </ul>
+          </nav>
+          <!-- #site-navigation -->
+          
+
+          
+        </div>
+        <!-- .row --> 
+        
+      </header>
+      <!-- .site-header --> 
+      
+      <!-- #main -->
+      <section id="main" class="middle wrapper">
+        <div class="row row-fluid">
+        
+        
+        <!-- TemplateBeginEditable name="Middle" -->
+        
+         {{ content }}
+         
+         <!-- TemplateEndEditable --> 
+         
+         
+         </div>
+      </section>
+      <!-- #main --> 
+      
+      
+      
+      
+      
+      <!-- .site-footer -->
+      <footer class="site-footer wrapper" role="contentinfo"> 
+        <!-- .row -->
+        <div class="row">
+        
+          
+          
+          
+          
+          <!-- .site-info -->
+          <div class="site-info">Theme <em>Read</em> Design by Pixelwars | Modifications by John Crowley</div>
+          <div class="site-info">Copyright &copy; John Crowley, 2013</div>
+          <!-- .site-info --> 
+          
+        </div>
+        <!-- .row --> 
+      </footer>
+      <!-- .site-footer --> 
+      
+    </div>
+    <!-- #PAGE -->
+    
+    
+    
+    
+    <!-- SCRIPTS -->
+    <script src="{{ ASSET_PATH }}/js/detectmobilebrowser.js"></script>
+    <script src="{{ ASSET_PATH }}/js/modernizr.js"></script>
+    <script src="{{ ASSET_PATH }}/js/jquery.imagesloaded.min.js"></script>
+    <script src="{{ ASSET_PATH }}/js/jquery.fitvids.js"></script>
+    <script src="{{ ASSET_PATH }}/js/google-code-prettify/prettify.js"></script>
+    <script src="{{ ASSET_PATH }}/js/jquery.uniform.min.js"></script>
+    
+    <!-- TemplateBeginEditable name="body-end" -->
+    <!-- TemplateEndEditable -->
+    
+    <script src="{{ ASSET_PATH }}/js/main.js"></script>
+    
+
+</body>
+</html>

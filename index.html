@@ -1,0 +1,62 @@
+---
+layout: page
+title: Opening data across the disaster cycle
+tagline: 
+---
+{% include JB/setup %}
+
+<!-- .blog-posts -->
+<div class="blog-posts readable-content">
+
+{% for post in site.posts %}
+
+
+
+	<!-- excerpt -->
+
+	<!-- .post -->										
+    <article class="post type-post hentry">
+
+		<!-- .entry-header -->
+        <header class="entry-header">
+            <h1 class="entry-title">
+                <a href="{{post.url}}" title="{{ post.title }}" rel="bookmark">{{ post.title }}</a>
+            </h1>
+        </header>
+        <!-- .entry-header -->
+         
+         <!-- .entry-meta --> 
+        <footer class="entry-meta">
+<span>
+            posted on <a href="#" title="" rel="bookmark"><time class="entry-date" datetime="{{ post.date | date_to_xmlschema }}">{{ post.date | date_to_string }}</time></a>
+            </span>				
+        </footer>
+        <!-- .entry-meta -->  
+                  
+		<!-- .featured -->
+        <div class="featured-image">
+            <img src="{{ ASSET_PATH }}{{post.featureimg}}" alt="blog-image">
+        </div>
+        <!-- .featured -->
+        
+        <!-- .entry-content -->
+        <div class="entry-content">
+            <p>{{ post.excerpt }}
+            <a href="{{post.url}}" class="more-link">Continue reading <span class="meta-nav">→</span></a></p>
+        </div>
+        <!-- .entry-content -->
+        
+    </article>
+    <!-- .post -->
+
+	
+{% endfor %}
+
+</div>
+<!-- end .blog-posts -->
+<!-- (*) -->
+
+
+
+
+

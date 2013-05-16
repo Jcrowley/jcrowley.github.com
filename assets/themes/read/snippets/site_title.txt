@@ -1,0 +1,18 @@
+<!-- .site-title -->
+<hgroup>
+  <h1 class="site-title"> <a href="{{ HOME_PATH }}/index.html" title="John Crowley" rel="home">Intertwingler<!--<img src="images/logo.png" alt="logo">--></a> </h1>
+  <!-- ><h2 class="site-description">John Crowley: Humanitarian, Technologist, Writer, Speaker</h2> -->
+</hgroup>
+<!-- .site-title -->
+
+<a href="{{post.url}}">{{ post.title }}</a>
+
+<time datetime="{{ post.date | date_to_xmlschema }}" class="postdate">{{ post.date | date_to_string }}</time>
+
+<p>{{ post.excerpt }}</p>
+
+<!-- tags -->
+{% include custom/tags_list %}
+
+<!-- read more -->
+<a href="{{post.url}}" class="textlink right">Read More</a>

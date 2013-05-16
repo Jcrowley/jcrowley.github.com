@@ -1,0 +1,91 @@
+
+#  EXCERPT: take first paragraph only
+
+{% capture excerpt %}
+    {% for paragraph in page.content %}{% if forloop.index0 <= page.more %}{{ paragraph }}{% endif %}{% endfor %}
+    <p><a href="{{ site.url }}{{ page.url }}">Zobacz cały artykuł &raquo;</a></p>
+{% endcapture %}
+{{ excerpt }}
+
+# ONLY LIST CATEGORY
+Remember that site.categories.x lists all posts in that category. Only posts, not pages.
+
+{% for post in site.categories.photo %}
+    # render the photo post html
+{% endfor %}
+
+
+More advanced usage
+<ul class="posts">
+{% for post in site.posts %}
+    {% if post.categories contains 'demography' and post.tags contains 'R' %}
+        <li><span>{{ post.date | date_to_string }}</span> &raquo; <a href="{{ BASE_PATH }}{{ post.url }}">{{ post.title }}</a></li>
+    {% endif %}
+{% endfor %}
+</ul>
+
+## RSS
+
+---
+layout: nil
+---
+<?xml version="1.0"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>example.com</title>
+    <link>http://example.com/</link>
+    <atom:link href="http://example.com/rss.xml" rel="self" type="application/rss+xml" />
+    <description>Your Website</description>
+    <language>en-us</language>
+    <pubDate>{{ site.time | date: "%a, %d %b %Y %H:%M:%S %z" }}</pubDate>
+    <lastBuildDate>{{ site.time | date: "%a, %d %b %Y %H:%M:%S %z" }}</lastBuildDate>
+
+    {% for post in site.posts %}
+    <item>
+      <title>{{ post.title }}</title>
+      <link>http://example.com{{ post.url }}</link>
+      <pubDate>{{ post.date | date: "%a, %d %b %Y %H:%M:%S %z" }}</pubDate>
+      <author>you@example.com (Your Name)</author>
+      <guid>http://example.com{{ post.id }}</guid>
+      <description>{{ post.content | xml_escape }}</description>
+    </item>
+    {% endfor %}
+
+  </channel>
+</rss>
+
+# ATOM
+
+---
+layout: nil
+---
+<?xml version="1.0"?>
+<feed xmlns="http://www.w3.org/2005/Atom">
+ 
+  <title>Your Website</title>
+  <link href="http://example.com/"/>
+  <link type="application/atom+xml" rel="self" href="http://example.com/atom.xml"/>
+  <updated>{{ site.time | date_to_xmlschema }}</updated>
+  <id>http://example.com/</id>
+  <author>
+    <name>Your Name</name>
+    <email>you@example.com</email>
+  </author>
+
+  {% for post in site.posts %}
+  <entry>
+    <id>http://example.com{{ post.id }}</id>
+    <link type="text/html" rel="alternate" href="http://example.com{{ post.url }}"/>
+    <title>{{ post.title }}</title>
+    <published>{{ post.date | date_to_xmlschema }}</published>
+    <updated>{{ post.date | date_to_xmlschema }}</updated>
+    <author>
+      <name>Your Name</name>
+      <uri>http://example.com/</uri>
+    </author>
+    <content type="html">{{ post.content | xml_escape }}</content>
+  </entry>
+  {% endfor %}
+ 
+</feed>
+

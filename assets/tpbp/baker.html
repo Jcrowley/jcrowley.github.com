@@ -1,0 +1,982 @@
+<!doctype html>
+<html lang="en" class="no-js">
+<head>
+<meta charset="utf-8">
+<title>The Pastry Box Project | Molly Holzschlag</title>
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<meta name="description" content="">
+<meta name="author" content="">
+<link href="http://the-pastry-box-project.net/wp-content/themes/pastrybox_new/backstage/bootstrap/css/bootstrap.min.css" rel="stylesheet">
+<link href="http://the-pastry-box-project.net/wp-content/themes/pastrybox_new/backstage/css/html5bp.min.css" rel="stylesheet">
+<link href="http://the-pastry-box-project.net/wp-content/themes/pastrybox_new/css/fonts.css" rel="stylesheet">
+<script type="text/javascript" src="//use.typekit.net/phi3cat.js"></script>
+<script type="text/javascript">try{Typekit.load();}catch(e){}</script>
+<link href="http://the-pastry-box-project.net/wp-content/themes/pastrybox_new/_private/fonts/ss-social/ss-social.css" rel="stylesheet" />
+<style>
+body {
+	padding-top: 60px;
+	font-family: "adobe-garamond-pro", serif;
+	font-size: 1.8em;
+	line-height: 1.8;
+	overflow-y: auto;
+	overflow-x: hidden;
+}
+body.most-recent {
+	padding-top: 0;
+}
+a {
+	position: relative;
+	color: #e13300;
+	text-decoration: none;
+	border-bottom: 1px dotted transparent;
+-webkit-transition: all .2s;
+-moz-transition: all .2s;
+-o-transition: all .2s;
+transition: all .2s;
+}
+a:hover {
+	color: #e13300;
+	border-bottom: 1px dotted #e13300;
+	text-decoration: none;
+}
+a:active, a:focus {
+	top: 1px;
+}
+.a-area-a a {
+	font-style: italic;
+}
+.a-area-b a {
+	color: #777;
+	font-style: normal;
+}
+.a-area-b a:hover {
+	color: #f70;
+	border-bottom: 1px dotted transparent;
+}
+.a-area-c a {
+	color: #333;
+}
+.a-area-c a:hover {
+	color: #333;
+	border-bottom: 1px dotted transparent;
+}
+.a-area-d a {
+	color: #777;
+}
+.a-area-d a:hover {
+	color: white;
+	border-bottom: 1px dotted white;
+}
+.additional:hover a {
+	border-bottom: 1px dotted #ccc;
+}
+.a-no-underline {
+	border-bottom: 1px dotted transparent;
+}
+.a-no-underline:hover {
+	border-bottom: 1px dotted transparent;
+}
+.a-area-no-underline a {
+	border-bottom: 1px dotted transparent;
+}
+.a-area-no-underline a:hover {
+	border-bottom: 1px dotted transparent;
+}
+::-moz-selection {
+background: pink;
+text-shadow: none;
+color: #333 !important;
+}
+::selection {
+background: pink;
+text-shadow: none;
+color: #333 !important;
+}
+ul {
+	list-style-type: none;
+}
+li {
+	line-height: 1.6;
+}
+p {
+	margin: 0;
+	padding: 0;
+	margin-bottom: 1em;
+}
+blockquote {
+	border-left: none;
+	margin: 0;
+	padding: 0;
+}
+blockquote blockquote {
+	font-style: italic;
+	font-size: .8em !important;
+	line-height: 1.3 !important;
+	color: #555;
+	width: 70%;
+	margin: 0 auto;
+	padding: 0 1em;
+	border-left: 4px double #ccc;
+}
+code {
+	background: white;
+	font-size: .7em;
+	color: #555;
+	box-shadow: 2px 2px 2px #ccc;
+	margin: 0 .2em;
+}
+pre code {
+	font-size: .6em;
+	box-shadow: none;
+	text-shadow: 1px 1px white;
+}
+pre {
+	box-shadow: 2px 2px 2px #ccc;
+}
+cite {
+	font-style: italic;
+}
+abbr, acronym {
+	border-bottom: 1px dotted #777;
+	cursor: help;
+}
+.portrait, .portrait-small {
+	border: 1px solid #ddd;
+	border-radius: 5px;
+	padding: 5px;
+}
+.portrait {
+	max-width: 200px;
+}
+.portrait-small {
+	max-width: 100px;
+}
+.no-margin {
+	margin: 0 !important;
+}
+.front .main, .coming-next, .baker-profile, .baker-past-thoughts, .by-years, .by-months {
+	padding-bottom: 1.5em;
+	-webkit-box-shadow: 0 10px 4px -4px #ddd;
+	-moz-box-shadow: 0 10px 4px -4px #ddd;
+	box-shadow: 0 10px 4px -4px #ddd;
+}
+h1, h2, h3, h4, h5, h6 {
+	margin: 0;
+	padding: 0;
+	font-size: 1em;
+	font-weight: normal;
+}
+.h-alpha {
+	text-align: center;
+	text-transform: uppercase;
+	border-top: 1px dotted #333;
+	border-bottom: 1px dotted #333;
+	padding: 1em 0;
+	font-size: .9em;
+	margin-bottom: 2em;
+}
+.h-beta {
+	text-align: center;
+	text-transform: uppercase;
+	font-size: .8em;
+	margin-bottom: 1em;
+	padding-bottom: 1em;
+}
+.h-beta span {
+	border-bottom: 1px dotted #333;
+}
+.h-gamma {
+	border-bottom: 2px dotted white;
+	margin-bottom: .3em;
+	font-size: 1.3em;
+}
+.jump {
+	font-style: italic !important;
+	text-transform: lowercase;
+	font-size: .8em;
+}
+.stream .jump, .search-results .jump {
+	padding: 1em 0;
+}
+.tooltip {
+	font-size: .6em;
+	font-style: italic;
+}
+.tooltip .tooltip-inner {
+	background: #333;
+	padding: 1em;
+}
+.tooltip.right .tooltip-arrow {
+	border-right-color: #333;
+}
+.tooltip.top .tooltip-arrow {
+	border-top-color: #333;
+}
+.tooltip.bottom .tooltip-arrow {
+	border-bottom-color: #333;
+}
+.pastrysearch {
+	font-family: 'HeydingsCommonIconsRegular', Arial, sans-serif;
+	position: relative;
+	left: -7px;
+}
+.pastrysearch:before {
+	content: "M";
+}
+.pastrybox {
+	font-family: "cooper-black-std", sans-serif !important;
+	text-transform: uppercase !important;
+	font-style: normal !important;
+}
+.pastrybox:before {
+	content: "P";
+}
+.pastrybox.logo {
+	font-size: 20em;
+	text-align: center;
+}
+.pastryseparator:before {
+	font-family: 'NymphetteRegular';
+	display: block;
+	text-align: center;
+	content: "ij";
+	font-size: 3em;
+}
+.navbar {
+	font-size: .6em;
+	font-family: "myriad-pro", sans-serif;
+}
+.navbar .btn-navbar {
+	margin-bottom: .5em;
+}
+.navbar .navbar-inner {
+	min-height: 30px;
+}
+.navbar form {
+	text-align: right;
+	position: relative;
+	top: -2px;
+}
+.navbar [class^="ss-"] {
+position: relative;
+top: 3px;
+}
+.navbar-inverse .navbar-inner {
+	background-color: #333;
+	background-image: linear-gradient(to bottom, #444, #333);
+	background-repeat: repeat-x;
+	border-color: #222;
+}
+.search-container {
+	float: right;
+}
+.search-container input {
+	background: #ccc;
+-webkit-transition: all .3s;
+-moz-transition: all .3s;
+-o-transition: all .3s;
+transition: all .3s;
+}
+.search-container input:focus {
+	background: white;
+}
+.mainnav {
+	float: left;
+}
+.navbar .nav {
+	margin: 0;
+}
+.navbar .nav > li > a {
+	padding-top: 2px;
+	padding-bottom: 2px;
+}
+.banner {
+	text-align: center;
+	margin-top: 1em;
+}
+.tagline {
+	font-style: italic;
+	font-size: .6em;
+}
+.brand {
+	text-transform: lowercase;
+	font-style: italic;
+	letter-spacing: 1px;
+	font-size: 1.2em;
+	margin-top: 1.3em;
+}
+.main {
+	margin-top: 2em;
+}
+.content-nav {
+	text-transform: uppercase;
+}
+.next, .previous {
+	font-size: .55em;
+}
+.next {
+	float: right;
+}
+.previous {
+	float: left;
+}
+.baked-by {
+	padding: .2em 0 .4em 0;
+	text-align: center;
+	font-size: .8em;
+}
+.baker-portrait {
+	text-align: center;
+}
+.thought-title {
+	text-transform: uppercase;
+	font-size: .7em;
+}
+.thought-content ul {
+	list-style-type: decimal;
+}
+.thought-format-a .baked-by {
+	padding: 0;
+	text-align: center;
+	font-size: .9em;
+	line-height: 1.4;
+	margin-bottom: .5em;
+}
+.thought-format-a .baked-by span {
+	display: block;
+}
+.thought-format-a .thought-title {
+	padding-top: 1em;
+	border-top: 1px dotted #333;
+	text-align: center;
+	text-transform: uppercase;
+}
+.thought-format-a .thought-content {
+	margin-top: 1em;
+	padding-top: .6em;
+	border-top: 1px dotted #333;
+}
+.thought-format-a .thought-content p, .thought-format-a .thought-content ul, .thought-format-a .thought-content ol, .thought-format-a .thought-content pre, .thought-format-a .thought-content blockquote {
+	font-size: 1em;
+	line-height: 1.6;
+	margin-bottom: 1.2em;
+}
+.thought-format-a .thought-content ul ul, .thought-format-a .thought-content ol ol, .thought-format-a .thought-content ul p, .thought-format-a .thought-content ol p {
+	font-size: 1em;
+}
+.thought-format-a .thought-footer {
+	text-align: center;
+	margin-top: 1em;
+	padding-top: 1em;
+	border-top: 1px dotted #333;
+	font-size: .7em;
+	color: #777;
+	font-style: italic;
+}
+.thought-format-b {
+	border-bottom: 1px dotted #333;
+	padding-bottom: 1.5em;
+}
+.thought-format-b .thought-title {
+	margin-top: 2em;
+	margin-bottom: .5em;
+	text-align: right;
+}
+.thought-format-b .thought-content p, .thought-format-b .thought-content ul, .thought-format-b .thought-content ol, .thought-format-b .thought-content pre, .thought-format-b .thought-content blockquote {
+	font-size: .8em;
+	line-height: 1.4;
+	margin-bottom: 1em;
+}
+.thought-format-b .thought-content ul ul, .thought-format-b .thought-content ol ol, .thought-format-b .thought-content ul p, .thought-format-b .thought-content ol p {
+	font-size: 1em;
+}
+.bakers-2012 .the-baker:last-of-type, .bakers-2013 .the-baker:last-of-type {
+	display: block;
+	width: 100%;
+	text-align: center;
+}
+.bakers-2012 .the-baker:last-of-type > *, .bakers-2013 .the-baker:last-of-type > * {
+	position: relative;
+	right: 20px;
+}
+.baker-profile {
+	margin-top: 2em;
+	margin-bottom: 2em;
+}
+.baker-profile .baker-portrait {
+	text-align: left;
+	margin-top: .2em;
+}
+.baker-profile p {
+	font-size: .8em;
+	line-height: 1.4;
+	margin-bottom: 1em;
+}
+.baker-past-thoughts {
+	margin-top: 3em;
+}
+.baker-past-thoughts .thought {
+	margin-top: 2em;
+}
+.baker-past-thoughts .thought-title {
+	border-top: none;
+}
+.baker-future-thoughts {
+	margin-top: 3em;
+}
+.baker-future-thoughts ul {
+	margin-top: 2em;
+}
+.baker-future-thoughts li {
+	text-align: center;
+	font-style: italic;
+}
+.by-years, .by-months {
+	margin-bottom: 1.5em;
+}
+.by-years ul, .by-months ul {
+	font-size: .7em;
+	text-transform: uppercase;
+}
+.the-baker {
+	min-height: 7em;
+	text-align: center;
+}
+.not-found fieldset {
+	padding-top: 1em;
+}
+.not-found input[type="text"] {
+	font-size: 2em !important;
+	min-height: 2em;
+	width: 100%;
+}
+.not-found form {
+	text-align: center;
+}
+.not-found .pastrysearch {
+	font-size: 1em;
+}
+.not-found .search-query {
+	padding-right: 2em !important;
+}
+.not-found .search-btn {
+	left: .5em;
+	top: .1em;
+}
+.complementary {
+	padding-top: 1.5em;
+}
+.complementary .thought {
+	border-bottom: 1px dotted #ccc;
+	margin-bottom: 1em;
+	padding-bottom: .8em;
+}
+.recent-thoughts {
+	margin-bottom: 2em;
+	padding-bottom: 1em;
+}
+.coming-next {
+	padding-bottom: 1em;
+	margin-bottom: 1em;
+	text-align: center;
+}
+.coming-next li {
+	min-height: 9em;
+}
+.coming-next-date {
+	text-transform: uppercase;
+	font-size: .6em;
+}
+.contentinfo {
+	margin-top: 2em;
+	padding-top: 1em;
+	background: #333;
+	color: #ddd;
+}
+.contentinfo {
+	font-family: "myriad-pro", sans-serif;
+	font-size: .8em;
+}
+.contentinfo .additional {
+	margin-bottom: 1.6em;
+}
+.contentinfo ul {
+	margin: 1em 0 0 0;
+	padding: 0;
+}
+.contentinfo li {
+	padding: .5em 0;
+	display: inline;
+}
+.contentinfo kbd {
+	font-size: .7em;
+	display: inline-block;
+	border: 1px solid #ccc;
+	border-radius: 5px;
+	padding: .5em;
+	min-width: 1.8em;
+	min-height: 1.8em;
+	margin-right: .5em;
+	text-align: center;
+}
+.contentinfo table {
+	margin: 0 auto;
+}
+.contentinfo tbody td:first-child {
+	margin-right: 1em;
+}
+.contentinfo td {
+	border-bottom: 1px solid #ccc;
+	padding: .3em .5em;
+	vertical-align: top;
+}
+.disclaimers-navigation {
+	border-top: 4px double white;
+	text-align: center;
+}
+.disclaimers-navigation li {
+	display: inline;
+	padding: 0 1em;
+}
+.copyright {
+	text-transform: uppercase;
+	font-size: .7em;
+	text-align: center;
+	margin: 1em 0;
+	padding: 1em 0 2em 0;
+}
+.burn {
+	text-align: center;
+	padding: .5em 0;
+	margin-bottom: 1em;
+	text-transform: uppercase;
+	font-size: .6em;
+	border-top: 1px dotted white;
+}
+form {
+	padding: 0;
+	margin: 0;
+	display: inline;
+}
+.search-btn {
+	position: relative;
+	left: -34px;
+	border: none;
+	background: transparent;
+}
+fieldset {
+	position: relative;
+	right: -34px;
+}
+.search-query {
+	padding: 1px 30px 1px 12px !important;
+	width: 180px;
+}
+blockquote.full-width {
+	width: 100%;
+}
+blockquote.smaller-text {
+	font-size: .9em;
+}
+blockquote .bold {
+	font-weight: bold;
+}
+blockquote .thought-title {
+	font-weight: bold;
+	text-transform: none !important;
+	border-top: none !important;
+	text-align: left !important;
+	margin-top: 0 !important;
+	padding-top: 0 !important;
+}
+blockquote .list-numbers {
+	list-style-type: decimal !important;
+}
+blockquote .list-letters {
+	list-style-type: lower-latin !important;
+}
+blockquote .list-margin > li {
+	margin-bottom: .5em !important;
+}
+blockquote .list-margin > li:not(:last-of-type) {
+margin-bottom: .5em !important;
+}
+blockquote .margin-top {
+	margin-top: 1em;
+}
+blockquote .margin-bottom {
+	margin-bottom: .5em;
+}
+blockquote .extra-margin-top {
+	margin-top: 2em;
+}
+blockquote .no-list-type {
+	list-style-type: none !important;
+}
+.center {
+	text-align: center;
+}
+.center {
+	text-align: center;
+}
+img#wpstats {
+	position: absolute;
+	top: 0;
+	width: 0px;
+	height: 0px;
+	overflow: hidden;
+}
+@media (max-width: 979px) {
+body {
+padding-top: 0 !important;
+padding-left: 0 !important;
+padding-right: 0 !important;
+padding-bottom: 0 !important;
+}
+.navbar-fixed-top, .navbar-fixed-bottom, .navbar-static-top {
+margin-left: 0;
+margin-right: 0;
+}
+.mainnav {
+float: none;
+display: block;
+}
+.navbar {
+text-align: center;
+}
+.search-container {
+float: none;
+display: block;
+}
+.search-container fieldset {
+text-align: center;
+position: relative;
+right: -17px;
+}
+.baker-profile .baker-portrait {
+text-align: center;
+margin-bottom: 1em;
+}
+}
+@media (max-width: 767px) {
+.disclaimers-navigation li {
+display: block;
+font-size: .9em;
+}
+.thought-format-b .thought-title {
+text-align: center;
+}
+.thought-format-b .baker-portrait {
+margin-bottom: 1em;
+}
+.container {
+padding-left: 20px;
+padding-right: 20px;
+}
+blockquote, .additional p {
+text-align: left;
+}
+.the-baker {
+width: 50%;
+float: left;
+}
+.coming-next li {
+width: 50%;
+float: left;
+}
+.banner span {
+display: block;
+}
+}
+@media (max-width: 490px) {
+body, html {
+max-width: 460px;
+width: 100%;
+}
+.brand {
+font-size: .9em;
+}
+.thought-format-a .thought-content {
+font-size: .8em;
+}
+.coming-next-date {
+font-size: .6em;
+line-height: 1.2;
+}
+.baked-by {
+font-size: .75em;
+}
+}
+pre {
+	background: url("http://the-pastry-box-project.net/wp-content/themes/pastrybox_new/img/bg-pre.png") repeat center top;
+}
+</style>
+<!--[if lt IE 9]><script src="http://html5shim.googlecode.com/svn/trunk/html5.js"></script><![endif]-->
+<link rel="shortcut icon" type="image/png" href="http://the-pastry-box-project.net/wp-content/themes/pastrybox_new/img/icons/favicon.png">
+<link rel="apple-touch-icon-precomposed" sizes="144x144" href="http://the-pastry-box-project.net/wp-content/themes/pastrybox_new/img/icons/apple-touch-icon-144-precomposed.png">
+<link rel="apple-touch-icon-precomposed" sizes="114x114" href="http://the-pastry-box-project.net/wp-content/themes/pastrybox_new/img/icons/apple-touch-icon-114-precomposed.png">
+<link rel="apple-touch-icon-precomposed" sizes="72x72" href="http://the-pastry-box-project.net/wp-content/themes/pastrybox_new/img/icons/apple-touch-icon-72-precomposed.png">
+<link rel="pingback" href="http://the-pastry-box-project.net/xmlrpc.php" />
+<link rel="alternate" type="application/rss+xml" title="The Pastry Box Project RSS Feed" href="http://the-pastry-box-project.net/feed/">
+<link rel="alternate" type="application/atom+xml" title="The Pastry Box Project Atom Feed" href="http://the-pastry-box-project.net/feed/atom/">
+<link rel="alternate" type="application/rss+xml" title="The Pastry Box Project &raquo; Molly Holzschlag Category Feed" href="http://the-pastry-box-project.net/baker/molly-holzschlag/feed/" />
+<link rel="EditURI" type="application/rsd+xml" title="RSD" href="http://the-pastry-box-project.net/xmlrpc.php?rsd" />
+<link rel="wlwmanifest" type="application/wlwmanifest+xml" href="http://the-pastry-box-project.net/wp-includes/wlwmanifest.xml" />
+<link rel='index' title='The Pastry Box Project' href='http://the-pastry-box-project.net/' />
+<meta name="generator" content="WordPress 3.2.1" />
+</head>
+<body id="top" class="">
+<div class="navbar navbar-inverse navbar-fixed-top">
+  <h1 class="visuallyhidden">Top Navigation</h1>
+  <h2 class="visuallyhidden">Shortcuts</h2>
+  <ul class="visuallyhidden" role="navigation">
+    <li><a href="#h-main" title="Jump to main content">Jump to main content</a></li>
+    <li><a href="#h-contentinfo" title="Jump to additional information">Jump to additional information</a></li>
+  </ul>
+  <div class="navbar-inner">
+    <div class="container"><a class="btn btn-navbar" data-toggle="collapse" data-target=".nav-collapse">Toggle Menu</a>
+      <div class="nav-collapse collapse">
+        <div class="search-container">
+          <h2 class="visuallyhidden">Search</h2>
+          <form action="http://the-pastry-box-project.net/" method="get" role="search" class="form-search">
+            <fieldset>
+            <label><span class="visuallyhidden">Search for</span>
+            <input type="text" name="s" class="search-query" value="" />
+            </label>
+            <button type="submit" class="search-btn pastrysearch"><span class="visuallyhidden">Go</span></button>
+            </fieldset>
+          </form>
+        </div>
+        <h2 class="visuallyhidden">Links</h2>
+        <ul class="nav mainnav a-area-no-underline">
+          <li class="tooltipify"><a href="http://the-pastry-box-project.net/most-recent" title="And No Extra Bytes">Most Recent</a></li>
+          <li class="tooltipify"><a href="http://the-pastry-box-project.net/bakers" title="Contributors To The Project">Bakers</a></li>
+          <li class="tooltipify"><a href="http://the-pastry-box-project.net/stream" title="All You Can Eat">Stream</a></li>
+          <li class="tooltipify"><a href="http://the-pastry-box-project.net/archives" title="Time Travel">Archives</a></li>
+          <li class="tooltipify"><a href="http://the-pastry-box-project.net" class="pastrybox" title="Home"><span class="visuallyhidden">Home</span></a></li>
+          <li class="tooltipify"><a href="https://twitter.com/thepastrybox" class="ss-twitter" title="Follow @thepastrybox"><span class="visuallyhidden">Follow @thepastrybox</span></a></li>
+          <li class="tooltipify"><a href="https://github.com/alexduloz/pastrybox" class="ss-octocat" title="Fork The Pastry Box"><span class="visuallyhidden">Fork The Pastry Box</span></a></li>
+          <li class="tooltipify"><a href="http://the-pastry-box-project.net/feed/" class="ss-rss" title="The Flux"><span class="visuallyhidden">The Flux</span></a></li>
+        </ul>
+      </div>
+    </div>
+  </div>
+</div>
+<div id="banner" class="banner" role="banner">
+  <h1 class="visuallyhidden">Banner</h1>
+  <div class="container">
+    <div class="tagline"><span>30 People Shaping The Web. </span><span>One Thought Every Day. </span><span>All Year Round. </span><span>Sugar For The Mind. </span></div>
+    <div class="brand a-area-c"><a href="http://the-pastry-box-project.net/" title="Home">The Pastry Box Project</a></div>
+  </div>
+</div>
+<div class="main" role="main">
+  <h1 id="h-main" class="visuallyhidden">Main Content</h1>
+  <div class="baker-profile step wrapper">
+    <div class="container">
+      <h2 class="h-alpha">Molly Holzschlag</h2>
+      <div class="row">
+        <div class="span4">
+          <p class="baker-portrait"><img src="http://the-pastry-box-project.net/wp-content/themes/pastrybox_new/_private/bakers/data/2012/portraits/molly-holzschlag.png" alt="Portrait Of Molly Holzschlag" class="portrait"></p>
+        </div>
+        <div class="span8 link-area-a">
+          <p>Molly E. Holzschlag is the prolific author of over 35 books which have helped to define standards and best practices over the years, including <i>The Zen of CSS Design: Visual Enlightenment for the Web</i>, written with Dave Shea. Molly is actively involved in various W3C working groups and talks at prestigious events around the globe. Her clients include the likes of AOL, Adobe Systems, Auto-by-Tel, BBC, eBay, Fidelity, Microsoft, MSN, Progressive Insurance, Yahoo!</p>
+          <p>Molly has <a href="http://www.molly.com/">a website</a>, and a Twitter account <a href="http://twitter.com/#!/mollydotcom">@mollydotcom</a>.</p>
+        </div>
+      </div>
+    </div>
+  </div>
+  <div class="baker-past-thoughts step wrapper">
+    <div class="container">
+      <h3 class="h-beta"><span>More thoughts by Molly Holzschlag</span></h3>
+      <div class="thought thought-format-a step">
+        <h4 class="thought-title"><a href="http://the-pastry-box-project.net/molly-holzschlag/2012-january-9/">Monday, 9 January</a></h4>
+        <blockquote class="thought-content a-area-a">
+          <p>Eleven years ago, I taught my first workshop on XHTML. It quickly became clear that outside of what was spec'd and implemented, the only answer I'd have for business case, use case or real-world pragmatic questions was "I don't know." Now I teach HTML5 workshops, and find myself confronted by the same questions, especially in regards to APIs, storage, and security.</p>
+          <p>The answer is still "I don't know." People refer to me as an expert. The truth is, the only thing I'm expert at is not knowing! At its essence, this is perhaps the ongoing fascination for those of us working the ever-changing Web. We don't know. Every day is a new adventure, every project an opportunity to learn. Out of this experience, I've learned we workers of the Web should be proud of all the things we don't know, because it opens up a literal world of opportunity and discovery.</p>
+        </blockquote>
+      </div>
+      <div class="thought thought-format-a step">
+        <h4 class="thought-title"><a href="http://the-pastry-box-project.net/molly-holzschlag/2012-february-7/">Tuesday, 7 February</a></h4>
+        <blockquote class="thought-content a-area-a">
+          <p>In 1995, back when the Web design and development industry was only atoddler, we began to be able to work with color. Of course, many readers will remember the need for "web safe" color when a typical video card and monitor could only calculate 256 colors. With 50 of those reserved for system use, we ended up with a 216 color palette that was considered most consistent across all browsers. I had come from the world of dumb terminals, so I was used to green or amber text on black and it never occurred to me that having to limit a color palette for this new and exciting communication space might feel limiting to some.</p>
+          <p>Over the next year, I was brutally disavowed of this by my students, who regularly would grouse about the lack of "real" color on the Web. Almost as new to the Web as my students, I was struggling for a way to explain this to them that showed that 216 colors was actually a luxury for many people in 1995 - up to and including working Web designers, who often had to limit the palette even more if they were serving users without 256 or more color support. Then one day, I stopped by my office to pick something up, and one of the daytime professors whom I'd not met was there. She jumped up and gave me a hug, expressing great personal warmth and an artist's excitement about the Web. "Molly," she said. "I feel so free on the Web. I've been working in print design my entire career and Ifinally get to work with more than four colors!"</p>
+          <p>Suffice it to say, I had found a positive answer for my students! At the time, her response was very unique. Nowadays, we never really need to think about color limitations anymore, except insofar as those who take extra care in designing for forms of color blindness. Otherwise, on-screen color palettes in the millions exist in today's Web design and development. It is a solved problem, and if that problem can be solved, so can the many others which we face. Go forth today and color the world, and embrace our progress as creatives, technologists and an industry.</p>
+        </blockquote>
+      </div>
+      <div class="thought thought-format-a step">
+        <h4 class="thought-title"><a href="http://the-pastry-box-project.net/molly-holzschlag/2012-march-9/">Friday, 9 March</a></h4>
+        <blockquote class="thought-content a-area-a">
+          <p>To move through the world, to drink with people of the streets, or dine with kings who will never know such poverty: Our life's gifts come with both kisses and wounds. To seek shelter from experience is to live life quietly, and while completely understandable, people working the Web - advocating for better practices and embracing the ideals at the Web's core - must consider living life loudly.</p>
+          <p>If you seek comfort in your work, then claim that comfort - for you deserve it. But if you seek revolution and evolution? Desire to become more involved in evangelizing or advocating a given position? Ask apauper, or ask a Queen, and you will come to understand what it means to be both a pauper and infinitely wealthy in the same moment. You will also learn that the greatest equalizer of all is found in our moments of shared truth, no matter where we sit in the grand stadium of life.</p>
+          <p>To me, that is the greatness of the Web - that we can become equals -that we are made equals in our limitations and our vision. And through our conversations - the open discourse that drives an Open Web, we will certainly extend beyond our limitations and visions to new levels of insight and inspiration.</p>
+          <p>Move through the world, and work to not be afraid to face the facts of poverty or to be enthralled by royalty. We are equals in those kisses and wounds, and uplifted by shared resources and truth.</p>
+        </blockquote>
+      </div>
+      <div class="thought thought-format-a step">
+        <h4 class="thought-title"><a href="http://the-pastry-box-project.net/molly-holzschlag/2012-april-18/">Wednesday, 18 April</a></h4>
+        <blockquote class="thought-content a-area-a">
+          <p>One day last week we had a freak hail storm and lost all power to the house. I had been desperately trying to work on an article that just wasn't happening. Frustrated, stuck inside with no WiFi and a very energetic cat who kept wanting out to play with the hailstones, Ipicked up one of her kitty toys and started to distract her.</p>
+          <p>Within a few moments we were engaged in a kitty vs. human romp all over the house, each of us chasing after her toy. By the time we stopped, with at least one of us exhausted (you can imagine who), the electricity had been on for a half hour, the WiFi back on. When I went back to work, I was able to refocus the article into something that made sense.</p>
+          <p>Why we lose or deny us the power of play, whether it be with our children or pets and especially each other, is a disturbing question. I encourage everyone to ask if they play enough. And if you find you don't, I encourage you join me in learning that play is as equally if not more important to the creative process than the hyperfocus we tend to give our work.</p>
+          <p>Let's play!</p>
+        </blockquote>
+      </div>
+      <div class="thought thought-format-a step">
+        <h4 class="thought-title"><a href="http://the-pastry-box-project.net/molly-holzschlag/2012-may-20/">Sunday, 20 May</a></h4>
+        <blockquote class="thought-content a-area-a">
+          <p>I was teaching a workshop this past week at AccessU, an excellent, highly focused event surrounding universal design, usability, accessibility and Open Web methodologies and philosophies. After a lovely morning of passionate discourse and learning, we went to have lunch. Upon my return, I was horrified to find an email from my youngest brother telling me my mother had been taken to the hospital and was possibly having a stroke.</p>
+          <p>Of course this is deeply upsetting to me, and being far away from all my family members the need to connect with them, and most especially my mother, was immediate and extreme. Fortunately, via email, tweets and yes—even Facebook—the family rallied around as did many other friends and colleagues. This outpouring of love and consideration is what is keeping me strong right now.</p>
+          <p>As I said my goodbyes to the workshop to go and figure out what the next steps are going to be in terms of my Mom's health and well-being, I thanked everyone and began to cry, speaking from my heart. This is why we're here. This is what the Open Web and open communications technologies are for - to connect people across the world. To strengthen, to educate, to empower and most importantly, to love.</p>
+          <p>Mortality reminds us in very cold, frightening terms how fragile our life and times truly are. The Web, which is a naturally social and interactive communications platform, can help bring us all closer. The fighting, the drama, the debates - they all become irrelevant in these very mortal moments. Let us all reach for the greatness within ourselves and put it into our Web work every day, because even on those days we feel it's overwhelming or doesn't matter, it really truly does. One world, one Web, one love, my brothers and sisters.</p>
+        </blockquote>
+      </div>
+      <div class="thought thought-format-a step">
+        <h4 class="thought-title"><a href="http://the-pastry-box-project.net/molly-holzschlag/2012-june-7/">Thursday, 7 June</a></h4>
+        <blockquote class="thought-content a-area-a">
+          <p>Today, I&#8217;m taking my nephew to the zoo. We&#8217;re going to feed the soulful, friendly giraffes and there are some young lion pups too. My favorite creatures are the anteaters and the huge tortoises. Then we&#8217;ll go sit in the aviary and listen to the shrieks of the beautiful, diverse birds in all their colorful glory.</p>
+          <p>What does this have to do with doing great design work? Getting off the computer and into the world—interacting with the happiness of achild among animals, sounds, smells and rich environments are all part of refreshing ourselves as well as inspiring us through the sensory joy of simply being.</p>
+          <p>So do yourself a favor this week. Get offline and go do something that&#8217;s colorful, smelly, silly and joyous!</p>
+        </blockquote>
+      </div>
+      <div class="thought thought-format-a step">
+        <h4 class="thought-title"><a href="http://the-pastry-box-project.net/molly-holzschlag/2012-july-17/">Tuesday, 17 July</a></h4>
+        <blockquote class="thought-content a-area-a">
+          <p>We talk a lot about work-life balance, but I wonder how many of us truly achieve it? I&rsquo;ve been doing a lot of soul-searching lately, desperate to figure out how I have over-extended myself work-wise to the point that I&rsquo;m constantly disappointing editors by being late, not getting tasks done on time, and basically just losing my once-powerful grip over the thing I always did well: Work. </p>
+          <p>Is it aging that has made me this way? Discouragement with the dramas of our industry—the technology wars, the fragmentation of aonce-clear vision of what The Web was meant to and could become—could these things be in my way? Or is it that I just haven&rsquo;t stopped to give myself a chance to have a life and life is calling to me now—but I have yet to reconcile the relationship and remain stuck, or moving toward that desired balance at a snail's pace? </p>
+          <p>Here&rsquo;s some advice from the heart: There is nothing wrong with giving your life to an ideal. I have done it, and the rewards are rich— friends from all over the world, respect from my peers, to have traveled much of the earth and been made welcome upon it—that is the miraculous part of giving your work your all, it comes back. Just don&rsquo;t let what happened to me happen to you—the work, the ideal takes over too young and for too long, and you could easily end up childless or without family, with little or no life structure or real measure of how to reconcile this elusive balance.</p>
+          <p>I know eventually I will reconcile what work/life balance really means for me. This pastry has been baked with love for you—work hard, do beautiful and important work, and make a rich life for yourself in all ways—for that will sustain you through your entire life.</p>
+        </blockquote>
+      </div>
+      <div class="thought thought-format-a step">
+        <h4 class="thought-title"><a href="http://the-pastry-box-project.net/molly-holzschlag/2012-august-12/">Sunday, 12 August</a></h4>
+        <blockquote class="thought-content a-area-a">
+          <p>We are<br />
+            innovators and dreamers,<br />
+            preachers and teachers,<br />
+            makers and doers</p>
+          <p>Each of us:<br />
+            The foundation of<br />
+            our future</p>
+        </blockquote>
+      </div>
+      <div class="thought thought-format-a step">
+        <h4 class="thought-title"><a href="http://the-pastry-box-project.net/molly-holzschlag/2012-september-22/">Saturday, 22 September</a></h4>
+        <blockquote class="thought-content a-area-a">
+          <p>Look up said the father — there in the sky! And the little boy did, and saw the Endeavour, a craft that brought humankind ever closer to the heavens. The little boy, though quite young, knew his life would forever be changed. His growing imagination, emerging intelligence, endless joy and wide-open wonder are part of the foundation of the next generation of innovators — taking us ever beyond what we thought we knew today. Imagine what the Web will be when this little boy is agrown man. </p>
+        </blockquote>
+      </div>
+      <div class="thought thought-format-a step">
+        <h4 class="thought-title"><a href="http://the-pastry-box-project.net/molly-holzschlag/2012-december-31/">Monday, 31 December</a></h4>
+        <blockquote class="thought-content a-area-a">
+          <p>One day, the Web as we knew it will be entirely different<br />
+            than the words baked so lovingly in this book </p>
+          <p>We hope it is still tasty, filled with nourishment<br />
+            that we left it better than when we were here</p>
+          <p>For the Web, much like a child, <br />
+            may throughout its life reflect <br />
+            the hearts, the hope, the desires <br />
+            of all humanity <br />
+            poured out on its pixels</p>
+          <p>Dancing on a billion dreams<br />
+            let the good shine <br />
+            for this is the time<br />
+            now is the time</p>
+          <p>To remember that the Web is humanity<br />
+            and it&#8217;s greatness is determined by <br />
+            each individual</p>
+          <p>Let us<br />
+            break of this bread,<br />
+            and peace be upon us all.</p>
+        </blockquote>
+      </div>
+      <p class="a-area-b"><a class="jump pull-right" href="#top">Back To Top</a></p>
+    </div>
+  </div>
+</div>
+<div id="h-contentinfo" class="contentinfo a-area-d pastryseparator wrapper" role="contentinfo" data-strokes-offset="60">
+  <h1 class="visuallyhidden">Additional Information</h1>
+  <div class="container">
+    <div class="additional step">
+      <h2 class="h-gamma">Fork & Improve</h2>
+      <p>The template used for the Pastry Box Project <a href="https://github.com/alexduloz/pastrybox" title="Fork On Github">can be forked on Github</a>. Feel free to add features to the project.</p>
+    </div>
+    <div class="additional step">
+      <h2 class="h-gamma">Dive Deeper</h2>
+      <p>If you want to know more about the Pastry Box Project, you can read our <a href="http://the-pastry-box-project.net/about" title="About">about</a> page, or <a href="http://bitspushedaround.com/on-the-pastry-box-project/" title="Bitspushedaround - Pastry Box">the genesis (and goals)</a> of the project. You can also consult the project's <a href="http://the-pastry-box-project.net/archives" title="Archives">archives</a> to find older thoughts, or view all the <a href="http://the-pastry-box-project.net/bakers" title="Bakers">bakers</a> who are taking part in the experiment.</p>
+    </div>
+    <div class="additional step">
+      <h2 class="h-gamma">Swim In The Stream</h2>
+      <p>A <a href="http://the-pastry-box-project.net/stream" title="The Stream">stream</a> of all the thoughts published on the Pastry Box Project is available. Keep it open somewhere, and lose yourself in it whenever you feel like it.</p>
+    </div>
+    <div class="additional step">
+      <h2 class="h-gamma">Keyboard Shortcuts</h2>
+      <p>The Pastry Box is a breeze to use with the keyboard.</p>
+      <table class="shortcuts">
+        <thead>
+          <tr>
+            <td>Combo</td>
+            <td>Kick</td>
+          </tr>
+        </thead>
+        <tbody>
+          <tr>
+            <td><kbd title="Alt">Alt</kbd><kbd title="Arrow: Down">↓</kbd></td>
+            <td>Move Down</td>
+          </tr>
+          <tr>
+            <td><kbd title="Alt">Alt</kbd><kbd title="Arrow: Up">↑</kbd></td>
+            <td>Move Up</td>
+          </tr>
+          <tr>
+            <td><kbd title="Alt">Alt</kbd><kbd title="Ctrl">Ctrl</kbd><kbd title="Arrow: Up">↑</kbd></td>
+            <td>Direct To Top</td>
+          </tr>
+          <tr>
+            <td><kbd title="Alt">Alt</kbd><kbd title="Ctrl">Ctrl</kbd><kbd title="Arrow: Down">↓</kbd></td>
+            <td>Direct To Bottom</td>
+          </tr>
+        </tbody>
+      </table>
+    </div>
+    <div class="additional step">
+      <h2 class="h-gamma">Meet Your Hosts</h2>
+      <p>There are not only pieces of software talking to each other behind this website. There are humans too. The Pastry Box is brought to you by <a class="h-card" href="http://bitspushedaround.com/" title="Alex Duloz - Website">Alex Duloz</a> and it is edited by <a class="h-card" href="http://katywatkins.com/" title="Katy Watkins - Website">Katy Watkins</a>. </p>
+    </div>
+    <div class="additional step">
+      <h2 class="h-gamma">Stay Tuned</h2>
+      <p>You can follow <a href="https://twitter.com/thepastrybox" title="Twitter - Pastry Box">@thepastrybox</a> on Twitter. For direct inquiries, get in touch with <a href="https://twitter.com/alexduloz" title="Twitter - Alex Duloz">@alexduloz</a> or <a href="https://twitter.com/_KatyWatkins" title="Twitter - Katy Watkins">@_KatyWatkins</a>. Alternatively, you can send an email to "hello", followed by the project’s Internet address.</p>
+    </div>
+    <div class="disclaimers">
+      <h2 class="visuallyhidden">Disclaimers</h2>
+      <ul class="disclaimers-navigation" role="navigation">
+        <li><a href="http://the-pastry-box-project.net/disclaimer/" title="Disclaimer">Disclaimer</a></li>
+        <li><a href="http://the-pastry-box-project.net/privacy-policy/" title="Privacy Policy">Privacy Policy</a></li>
+        <li><a href="http://the-pastry-box-project.net/terms-of-services/" title="Terms Of Services">Terms Of Services</a></li>
+      </ul>
+    </div>
+    <div class="copyright">
+      <h2 class="visuallyhidden">Copyright</h2>
+      <p>Copyright &copy; 2013 The Pastry Box Project</p>
+    </div>
+    <div id="bottom" class="burn step">
+      <h2 class="visuallyhidden">Burn</h2>
+      <p>Code is art. Hence the trendy shoes.</p>
+    </div>
+  </div>
+</div>
+<script src="//code.jquery.com/jquery.min.js"></script>
+<script>window.jQuery || document.write('<script src="http://the-pastry-box-project.net/wp-content/themes/pastrybox_new/backstage/js/jquery.min.js"><\/script>')</script>
+<script src="http://the-pastry-box-project.net/wp-content/themes/pastrybox_new/backstage/bootstrap/js/bootstrap.min.js"></script>
+<script src="http://the-pastry-box-project.net/wp-content/themes/pastrybox_new/backstage/js/jquery.ba-throttle-debounce.min.js"></script>
+<script src="http://platform.twitter.com/widgets.js" charset="utf-8"></script>
+<script src="http://the-pastry-box-project.net/wp-content/themes/pastrybox_new/js/min.js"></script>
+<script src="http://the-pastry-box-project.net/wp-content/themes/pastrybox_new/js/application.js"></script>
+<script type='text/javascript' src='http://the-pastry-box-project.net/wp-includes/js/jquery/jquery.js?ver=1.6.1'></script>
+<script type='text/javascript' src='http://s.gravatar.com/js/gprofiles.js?aa&#038;ver=3.2.1'></script>
+<script type='text/javascript'>/* <![CDATA[ */ var WPGroHo = { my_hash: "" }; /* ]]> */</script>
+<script type='text/javascript' src='http://the-pastry-box-project.net/wp-content/plugins/jetpack/modules/wpgroho.js?ver=3.2.1'></script>
+<div style="display:none"></div>
+<script src="http://stats.wordpress.com/e-201301.js" type="text/javascript"></script>
+<script type="text/javascript">st_go({v:'ext',j:'1:1.2.2',blog:'30788641',post:'0'}); var load_cmc = function(){linktracker_init(30788641,0,2);}; if ( typeof addLoadEvent != 'undefined' ) addLoadEvent(load_cmc); else load_cmc();</script>
+</body>
+</html>
