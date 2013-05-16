@@ -6,7 +6,7 @@ tags : [g2g]
 title: Connecting Grassroots to Government Community Review
 type: faq
 featureimg: /images/posts/g2g_osmtasking.png
-excerpt: "I am releasing the community draft of the <em>Connecting Grassroots and Government for Disaster Response</em>. This is <strong>not</strong> intended to be <em>Disaster Relief 2.0M</em>, which examined the links between crisis mapping and the IASC/UN-led cluster system. Rather, it is a 0.1 version of another thread of work around US federal agencies. It is offered in a very different spirit: as a draft to be edited. We'll go into final edits on 26 May. I hope these ten days give a fair bit of responses. I love criticism that improves ideas."
+excerpt: "I am releasing the community draft of the <em>Connecting Grassroots and Government for Disaster Response</em>. This is <strong>not</strong> intended to be <em>Disaster Relief 2.0</em>, which examined the links between crisis mapping and the IASC/UN-led cluster system. Rather, it is a 0.1 version of another thread of work around US federal agencies. It is offered in a very different spirit: as a draft to be edited. We'll go into final edits on 26 May. I hope these ten days give a fair bit of responses. I love criticism that improves ideas."
 ---
 {% include JB/setup %}
 
