@@ -89,7 +89,7 @@ h1.site-title a:hover { color:#000; }
 .main-navigation ul .current-menu-item > a { color:#C30; }
 .main-navigation ul li, .main-navigation ul li a { color:#333; }
 .main-navigation > ul > li > a:hover, .main-navigation > ul > li > a.selected { border-bottom:1px dotted #ccc; }
-.main-navigation > ul > li > h1 a:hover, .main-navigation > ul > li > h1 a.selected { border-bottom: none; }
+.main-navigation > ul > li.site-title > a:hover, .main-navigation > ul > li.site-title > a.selected { border-bottom: none; }
 
 /* navigation level 2 */
 .main-navigation ul ul { display:none;  position:absolute; top:3.542em; margin:-2px 0 0 0; left:-1em; width:160px; z-index:310; padding: 0; border:1px solid #ddd; border-top:2px solid #555;  box-shadow: 0px 0px 10px 1px rgba(0,0,0,.1); }
