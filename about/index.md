@@ -1,7 +1,7 @@
 ---
-layout: page
+layout: about
 title: About
-tagline: me
+tagline: John Crowley
 navgroup: about
 ---
 {% include JB/setup %}
