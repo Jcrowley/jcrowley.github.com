@@ -181,6 +181,8 @@ small {
     font-size: 80%;
 }
 
+h1 small { font-size: 60%; display: block; }
+
 /*
  * Prevents `sub` and `sup` affecting `line-height` in all browsers.
  */
