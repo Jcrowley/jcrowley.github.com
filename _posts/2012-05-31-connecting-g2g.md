@@ -2,7 +2,7 @@
 layout: post
 category : work
 group: project
-tags : [g2g]
+tags : g2g
 title: Connecting Grassroots to Government
 type: faq
 navgroup: blog
