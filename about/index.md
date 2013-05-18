@@ -10,6 +10,17 @@ I work to open data across the disaster cycle: from risk reduction and preparedn
 
 I hold an MPA from the [John F. Kennedy School of Government at Harvard University](http://www.hks.harvard.edu), where I was the Robert C. Seamans, Jr. Fellow in Science, Technology, and Public Policy. I also hold an MA in the history of ideas from the [University Professors Program at Boston University](http://en.wikipedia.org/wiki/University_Professors_Program) and an MusB in cello and music history ( _summa cum laude_ with distinction), from the [Boston University School for the Arts](http://www.bu.edu/cfa/), where I studied with [Leslie Parnas](http://www.bu.edu/cfa/music/faculty/parnas/).
 
+## For conference organizers...
+You tend to need biographies of different lengths. Here are a few:
 
+### Long version
+John Crowley is the consultant to the Global Facility for Disaster Reduction and Recovery's Open Data for Resilience Initiative. He is also the curator of RELIEF experiments at Camp Roberts, a humanitarian technology accelerator run through partnership of the National Defense University's Center for Technology and National Security Policy TIDES project and Naval Postgraduate School. As a researcher, he also holds a post at the Harvard Humanitarian Initiative on the Open Humanitarian Initiative with NetHope, and serves as a Public Policy Scholar at the Woodrow Wilson International Center for Scholars Science and Technology Innovation Program (STIP) Commons Lab. John explores the policy and technology interface between the formal humanitarian system and emerging technology communities like OpenStreetMap and Ushahidi, with the aim of improving coordination between actors in the humanitarian system. John was the lead author of the 2011 "Disaster Relief 2.0" study for the United Nations Office for the Coordination of Humanitarian Affairs, which proposed a framework for dialogue between the international humanitarian system and emerging technology communities. John holds an MPA from Harvard's Kennedy School of Government, where he was the Robert C. Seamans, Jr. Fellow in Science, Technology, and Public Policy. He also holds an MA in History of Ideas and an MusB in Cello Performance and Music History &amp; Literature from Boston University. He tweets at @jcrowley and blogs at jcrowley.net.
 
+### Short version
+John Crowley works at the intersection of humanitarian technology, disaster risk reduction, public policy, and field practice. He is a consultant to the Global Facility for Disaster Reduction and Recovery's Open Data for Resilience Initiative at the World Bank. He also curates a humanitarian technology accelerator run through partnership of the National Defense University's Center for Technology and National Security Policy TIDES project and Naval Postgraduate School at Camp Roberts in California. John holds an MPA from Harvard's Kennedy School of Government, where he was the Robert C. Seamans, Jr. Fellow in Science, Technology, and Public Policy. He is also a classically-trained cellist. 
 
+### Shorter version
+John Crowley works at the intersection of humanitarian technology, disaster risk reduction, public policy, and field practice. He is a consultant to the Global Facility for Disaster Reduction and Recovery at the World Bank. He also curates the Camp Roberts humanitarian technology accelerator and is a researcher at the Harvard Humanitarian Initiative.
+
+### Three words
+Accelerates Humanitarian Innovation
