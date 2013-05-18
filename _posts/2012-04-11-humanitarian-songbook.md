@@ -1,7 +1,6 @@
 ---
 layout: post
-category : work
-group: project
+category : blog
 tags : [g2g]
 title: Humanitarian Songbook
 type: faq

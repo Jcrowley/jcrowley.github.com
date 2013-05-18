@@ -1,7 +1,6 @@
 ---
 layout: post
-category : work
-group: project
+category : blog
 tags : [g2g]
 title: Disaster Relief 2.0
 type: faq
