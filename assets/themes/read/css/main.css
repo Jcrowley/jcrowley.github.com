@@ -53,7 +53,7 @@ body { color:#444; }
 
 /* -------------------------------------------- */
 /* LAYOUT */
-.middle { padding-bottom: 4em; overflow: hidden; }
+.middle { padding-bottom: 1em; overflow: hidden; }
 .wrapper { width:100%; }
 .wrapper > .row { width:80%; margin-left:auto; margin-right:auto; }
 .row-fluid { margin-left:auto; margin-right:auto; }
@@ -121,6 +121,7 @@ h1.site-title a:hover { color:#000; }
 .site-footer .site-info { padding-top:1em; text-align:center; font-size:.9em; }
 .site-footer .site-info, .site-footer .site-info a { color:#666; }
 
+/* PAGINATOR */
 
 /* -------------------------------------------- */
 /* TYPOGRAPHY */
@@ -178,7 +179,7 @@ ul { list-style:square; }
 .icon-star-empty-list li:before { content: "\f006"; font-size:14px; }
 .icon-chevron-right-list li:before { content: "\f054"; font-size:14px; }
 .icon-th-large-list li:before { content: "\f009"; font-size:9px; width:2.2em; }
-.icon-tags-list li:before { content: "\f02B"; }
+.icon-tags-list li:before { content: "\f02B"; font-size:14px;}
 dt { font-size:.92em; }
 dd { font-size:.9em; padding-bottom:1em; margin-left:1em; }
 dd:before { content: "\f0a4"; font-size:14px; }
@@ -503,6 +504,7 @@ input[type=submit].grass:active, input[type=button].grass:active, button.grass:a
 .entry-meta .comments-link:before { content: "\f0e5"; font-size:1em; margin-left: .6em; margin-right: -0.8em; display:inline-block; }
 .featured-image { text-align:center; }
 .site-content h1 a:active { border-bottom:1px dotted #ccc; }
+.post-pagination a {border: none; }
 
 /* POST FORMATS */
 /* standart */
@@ -558,7 +560,7 @@ input[type=submit].grass:active, input[type=button].grass:active, button.grass:a
 .format-aside .entry-content:before{content:'';position:absolute;top:0;bottom:0; left:2em; width:2px;border:solid #efcfad;border-color:rgba(239, 207, 173, 0.9);border-width:0 1px;}
 
 /* Pagination */
-.navigation, .post-pagination { padding: 2em 0; }
+.navigation, .post-pagination { padding: 2em 0 0 0; }
 .navigation > div { width:50%; float:left; }
 .navigation a { display: inline-block; padding: .4em; }
 .navigation .nav-next { text-align: right; }
@@ -569,6 +571,7 @@ input[type=submit].grass:active, input[type=button].grass:active, button.grass:a
 .post-pagination li { display: inline-block; font-size: .9em; }
 .post-pagination li a { display: inline-block; padding: .2em .6em; }
 .post-pagination li.current a { background: #eee; }
+.post-pagination-wrapper { border-style:solid; border-width: 1px 0 0 0; border-color: #eee; }
 
 
 /* -------------------------------------------- */

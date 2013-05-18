@@ -1,12 +1,14 @@
-
+<!-- page header -->
 <div class="page-header">
   <h1>{{ page.title }} {% if page.tagline %} <small>{{ page.tagline }}</small>{% endif %}</h1>
 </div>
 
+<!-- content -->
 <div class="row">
-  <div class="span8">
+  <div class="span9">
     {{ content }}
-    <hr>
+
+	<!-- paginator 
     <div class="pagination">
       <ul>
       {% if page.previous %}
@@ -22,17 +24,20 @@
       {% endif %}
       </ul>
     </div>
-    <hr>
+	-->
 
   </div>
-  <div id="secondary" class="widget-area span4" role="complementary">
+
+
+  <!-- side bar -->
+  <div id="secondary" class="widget-area span3" role="complementary">
 	<aside class="widget">
     <h3 class="widget-title">Published</h3>
     <div class="date"><span>{{ page.date | date_to_long_string }}</span></div>
 
-  {% unless page.tags == empty %}
+    {% unless page.tags == empty %}
     <h3 class="widget-title">Tags</h3>
-    <ul class="icons icons-ul">
+    <ul class="icons icon-tags-list">
     {% assign tags_list = page.tags %}
     {% include JB/tags_list %}
     </ul>
@@ -41,3 +46,26 @@
   </div>
 </div>
 </div>
+
+
+<!-- post pagination -->
+<div class="row">
+<div class="post-pagination-wrapper">
+<nav class="post-pagination">
+		<ul class="pagination">
+		{% if page.previous %}
+      <li class="pagination-prev"><a href="{{ BASE_PATH }}{{ page.previous.url }}" rel="prev"> <i class="icon-backward"></i> Previous </a></li>
+      {% else %}
+      <li class="pagination-prev"><i class="icon-pause"></i></li>
+      {% endif %}
+      <li class="pagination-num"><a href="{{ BASE_PATH }}/blog"> Archive </a></li>
+      {% if page.next %}
+		<li class="pagination-next"><a href="{{ BASE_PATH }}{{ page.next.url }}" title="{{ page.next.title }}" rel="next"> Next <i class="icon-forward"></i></a></li>
+      {% else %}
+      <li class="pagination-next"><i class="icon-stop"></i></li>
+      {% endif %}
+    </ul>
+	</nav>
+</div>
+</div>
+<!-- post pagination -->
