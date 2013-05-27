@@ -3,7 +3,7 @@ layout: post
 category : blog
 title: A memorial to a Marine on Memorial Day
 featureimg: /images/posts/suribachi.png
-excerpt: "Memorial Day"
+excerpt: "Giving thanks to an unknown Marine on Memorial Day"
 ---
 {% include JB/setup %}
 
