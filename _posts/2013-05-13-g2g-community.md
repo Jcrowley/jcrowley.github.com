@@ -21,11 +21,11 @@ Please help me correct errors, fix mischaracterizations, and build this into a w
 
 With many, many thanks to Lea Shanley for her tireless (often invisible) work and Dave Rejeski for his patience on the production of this document.
 
-##[Connecting Grassroots to Government: version 0.91]({{ ASSET_PATH }}/docs/g2gv0.91.pdf)
-[![Connecting Grassroots to Government: version 0.91]({{ ASSET_PATH }}/images/icons/pdf.png "Connecting Grassroots to Government: version 0.9]")]({{ ASSET_PATH }}/docs/g2gv0.91.pdf)[Download PDF]({{ ASSET_PATH }}/docs/g2gv0.91.pdf)
+##[Connecting Grassroots to Government: Newest version 0.91]({{ ASSET_PATH }}/docs/g2gv0.91.pdf)
+[![Connecting Grassroots to Government: Newest version 0.91]({{ ASSET_PATH }}/images/icons/pdf.png "Connecting Grassroots to Government: Newest version 0.9]")]({{ ASSET_PATH }}/docs/g2gv0.91.pdf)[Download PDF]({{ ASSET_PATH }}/docs/g2gv0.91.pdf)
 
-##[Connecting Grassroots to Government: version 0.9]({{ ASSET_PATH }}/docs/g2gv0.90.pdf)
-[![Connecting Grassroots to Government: version 0.9]({{ ASSET_PATH }}/images/icons/pdf.png "Connecting Grassroots to Government: version 0.9]")]({{ ASSET_PATH }}/docs/g2gv0.90.pdf)[Download PDF]({{ ASSET_PATH }}/docs/g2gv0.90.pdf)
+##[Connecting Grassroots to Government: Original Community version 0.9]({{ ASSET_PATH }}/docs/g2gv0.90.pdf)
+[![Connecting Grassroots to Government: Original Community version 0.9]({{ ASSET_PATH }}/images/icons/pdf.png "Connecting Grassroots to Government: version 0.9]")]({{ ASSET_PATH }}/docs/g2gv0.90.pdf)[Download PDF]({{ ASSET_PATH }}/docs/g2gv0.90.pdf)
 
 Please email your comments to bostoncello {at} the Big G.
 
