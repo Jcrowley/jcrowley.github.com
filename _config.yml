@@ -6,7 +6,7 @@ exclude: [".rvmrc", ".rbenv-version", "README.md", "Rakefile", "changelog.md"]
 auto: true
 pygments: true
 server: true
-permalink: none
+permalink: /blog/:year/:month/:day/:title.html
 ## baseurl: "jcrowley"
 prose:
   rooturl: "_posts"
