@@ -4,7 +4,7 @@ layout: post
 category: blog 
 tags:
 - opinion 
-title: "Return to Writng"
+title: "Return to Writing"
 featureimg: /images/posts/uni_cover.png
 excerpt: "Candor has consequences. Telling the truth about what has happened around my work in data analytics, data literacy, and data policy has not be possible. Some work is too sensitive; some politics too unstable; some relationships too important to risk joining in a polemic. All one can do is provide glimpses--something that (to me) has seemed incomplete and unworthy of my time. And yet, it is time to start writing again... "
 
